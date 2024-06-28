@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+.header-left a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+}
+.header-left a:hover {
+    color: #db0a72;
+}
+.header-title img {
+  max-height: 50px;
+}
+.header-right input {
+  padding: 5px;
+  font-size: 16px;
+}
+i {
+  margin-right: 8px;
+}
