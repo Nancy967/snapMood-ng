@@ -18,9 +18,17 @@
 .header-title img {
   max-height: 50px;
 }
+.header-title a:hover{
+    opacity: 0.7;
+}
 .header-right input {
   padding: 5px;
   font-size: 16px;
+  border-radius: 20px;
+  border: none;
+}
+.header-right input:focus{
+    outline: none;
 }
 i {
   margin-right: 8px;

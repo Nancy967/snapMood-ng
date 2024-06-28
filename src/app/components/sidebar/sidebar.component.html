@@ -1,9 +1,35 @@
 <div class="sidebar">
-    <h3>{{title}}</h3>
-    <nav>
-        <ul>
-            <li><a [routerLink]="['/']">Posts</a></li>
-            <li><a [routerLink]="['/abouts']">Abouts</a></li>
-        </ul>
-    </nav>
+  <img
+    src="assets/sidebar/user.png"
+    alt="Profile Picture"
+    class="profile-pic"
+  />
+  <div class="name">User Name</div>
+  <div class="bio">This is a short bio about the user.</div>
+  <button class="follow-button">Follow</button>
+
+  <div class="stats">
+    <div class="stat">
+      <h3>120</h3>
+      <p>Likes</p>
+    </div>
+    <div class="stat">
+      <h3>300</h3>
+      <p>Following</p>
+    </div>
+    <div class="stat">
+      <h3>500</h3>
+      <p>Followers</p>
+    </div>
+  </div>
+
+  <div class="menu">
+    <a
+      *ngFor="let item of menuItems"
+      [routerLink]="[item.link]"
+      [routerLinkActive]="['active']"
+    >
+      {{ item.label }}
+    </a>
+  </div>
 </div>
